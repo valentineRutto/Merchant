@@ -5,7 +5,7 @@
 
       <ul>
       <% @product.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+      <li><%= message %></li>
       <% end %>
       </ul>
     </div>
@@ -16,8 +16,8 @@
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :price %><br>
-    <%= f.text_field :price %>
+      <%= f.label :price, "Price (like 2.99)"  %><br>
+    <%= f.text_field :price  %>
   </div>
   <div class="field">
     <%= f.label :description %><br>
